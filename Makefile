@@ -59,7 +59,7 @@ clean:
 
 #Full Clean, Objects and Binaries
 spotless: clean
-	@$(RM) -rf $(TARGETDIR)/$(TARGET) $(DGENCONFIG) *.db
+	@$(RM) -rf $(TARGETDIR)/$(TARGET) *.db
 	@$(RM) -rf build bin html latex
 
 #Unit Tester
