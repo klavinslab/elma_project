@@ -8,12 +8,16 @@ using namespace elma;
 using namespace stopwatch;
 
 StopWatch::StopWatch() : StateMachine("stopwatch") {
+
+    // Define state machine initial states and transitions here
     set_initial(off);
     set_propagate(false);
     add_transition("start/stop", off, on);
     add_transition("reset", off, off);            
     add_transition("start/stop", on, off);
     add_transition("lap",   on, on);
+
+    // Make sure we start in the right condition
     reset();
 }
 

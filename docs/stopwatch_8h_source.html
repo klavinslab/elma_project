@@ -90,53 +90,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _ELMA_STOP_WATCH_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _ELMA_STOP_WATCH_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;elma/elma.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;on.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;off.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;user_interface.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestopwatch.html">stopwatch</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespacestd_1_1chrono.html">std::chrono</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespaceelma.html">elma</a>;    </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classstopwatch_1_1StopWatch.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classstopwatch_1_1StopWatch.html">StopWatch</a> : <span class="keyword">public</span> StateMachine {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classstopwatch_1_1StopWatch.html">StopWatch</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> begin();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> reset();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> stop();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> lap();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        high_resolution_clock::duration value();</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;elma/elma.h&quot;</span> <span class="comment">// Note installation directory for elma</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;on.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;off.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;user_interface.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestopwatch.html">stopwatch</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespacestd_1_1chrono.html">std::chrono</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespaceelma.html">elma</a>;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classstopwatch_1_1StopWatch.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classstopwatch_1_1StopWatch.html">StopWatch</a> : <span class="keyword">public</span> StateMachine {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classstopwatch_1_1StopWatch.html">StopWatch</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> begin();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> vector&lt;high_resolution_clock::duration&gt;&amp; laps() { <span class="keywordflow">return</span> _laps; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classstopwatch_1_1OnState.html">OnState</a> on;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classstopwatch_1_1OffState.html">OffState</a> off;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> _running;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        high_resolution_clock::time_point _start_time;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        high_resolution_clock::duration _elapsed;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        vector&lt;high_resolution_clock::duration&gt; _laps;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> reset();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> stop();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> lap();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        high_resolution_clock::duration value();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classstopwatch_1_1StopWatch.html#a8b335f9667cd518297ca3be4e57c4972">   38</a></span>&#160;        <span class="keyword">const</span> vector&lt;high_resolution_clock::duration&gt;&amp; <a class="code" href="classstopwatch_1_1StopWatch.html#a8b335f9667cd518297ca3be4e57c4972">laps</a>() { <span class="keywordflow">return</span> _laps; }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// When overriding the StateMachine class, put state declarations here.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classstopwatch_1_1OnState.html">OnState</a> on;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classstopwatch_1_1OffState.html">OffState</a> off;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Other private variables</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">bool</span> _running;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        high_resolution_clock::time_point _start_time;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        high_resolution_clock::duration _elapsed;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        vector&lt;high_resolution_clock::duration&gt; _laps;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classstopwatch_1_1StopWatch_html_a8b335f9667cd518297ca3be4e57c4972"><div class="ttname"><a href="classstopwatch_1_1StopWatch.html#a8b335f9667cd518297ca3be4e57c4972">stopwatch::StopWatch::laps</a></div><div class="ttdeci">const vector&lt; high_resolution_clock::duration &gt; &amp; laps()</div><div class="ttdoc">Get a list of lap times. </div><div class="ttdef"><b>Definition:</b> <a href="stopwatch_8h_source.html#l00038">stopwatch.h:38</a></div></div>
 <div class="ttc" id="namespacestopwatch_html"><div class="ttname"><a href="namespacestopwatch.html">stopwatch</a></div><div class="ttdef"><b>Definition:</b> <a href="off_8h_source.html#l00006">off.h:6</a></div></div>
 <div class="ttc" id="namespacestd_1_1chrono_html"><div class="ttname"><a href="namespacestd_1_1chrono.html">chrono</a></div></div>
-<div class="ttc" id="classstopwatch_1_1OnState_html"><div class="ttname"><a href="classstopwatch_1_1OnState.html">stopwatch::OnState</a></div><div class="ttdef"><b>Definition:</b> <a href="on_8h_source.html#l00013">on.h:13</a></div></div>
+<div class="ttc" id="classstopwatch_1_1OnState_html"><div class="ttname"><a href="classstopwatch_1_1OnState.html">stopwatch::OnState</a></div><div class="ttdoc">The on state of the stopwatch. </div><div class="ttdef"><b>Definition:</b> <a href="on_8h_source.html#l00015">on.h:15</a></div></div>
 <div class="ttc" id="classstopwatch_1_1OffState_html"><div class="ttname"><a href="classstopwatch_1_1OffState.html">stopwatch::OffState</a></div><div class="ttdoc">A State class to represen the state in which the stopwatch is off. </div><div class="ttdef"><b>Definition:</b> <a href="off_8h_source.html#l00015">off.h:15</a></div></div>
-<div class="ttc" id="classstopwatch_1_1StopWatch_html"><div class="ttname"><a href="classstopwatch_1_1StopWatch.html">stopwatch::StopWatch</a></div><div class="ttdef"><b>Definition:</b> <a href="stopwatch_8h_source.html#l00014">stopwatch.h:14</a></div></div>
+<div class="ttc" id="classstopwatch_1_1StopWatch_html"><div class="ttname"><a href="classstopwatch_1_1StopWatch.html">stopwatch::StopWatch</a></div><div class="ttdoc">A stop watch class, that inherits from StateMachine. </div><div class="ttdef"><b>Definition:</b> <a href="stopwatch_8h_source.html#l00016">stopwatch.h:16</a></div></div>
 <div class="ttc" id="namespaceelma_html"><div class="ttname"><a href="namespaceelma.html">elma</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 17:14:09 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 14 2019 18:49:22 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node2" href="$classstopwatch_1_1OffState.html" title="A State class to represen the state in which the stopwatch is off. " alt="" coords="111,5,259,32"/>
-<area shape="rect" id="node3" href="$classstopwatch_1_1OnState.html" title="stopwatch::OnState" alt="" coords="111,56,259,83"/>
+<area shape="rect" id="node3" href="$classstopwatch_1_1OnState.html" title="The on state of the stopwatch. " alt="" coords="111,56,259,83"/>
 </map>

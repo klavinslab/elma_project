@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exit',['exit',['../classstopwatch_1_1OffState.html#a01d01fba6059ab3581c243d0b6d6c19e',1,'stopwatch::OffState']]]
+  ['begin',['begin',['../classstopwatch_1_1StopWatch.html#a0fb3ab295580a7d29d55ca52b41f6294',1,'stopwatch::StopWatch']]]
 ];

@@ -4,7 +4,6 @@
 #include <chrono>
 #include "gtest/gtest.h"
 #include "stopwatch.h"
-#include "elma/elma.h" // note directory require now
 
 namespace {
  

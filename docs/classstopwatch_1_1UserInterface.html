@@ -93,14 +93,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">stopwatch::UserInterface Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A user interface for the a <a class="el" href="classstopwatch_1_1StopWatch.html" title="A stop watch class, that inherits from StateMachine. ">StopWatch</a> object.  
+ <a href="classstopwatch_1_1UserInterface.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="user__interface_8h_source.html">user_interface.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for stopwatch::UserInterface:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classstopwatch_1_1UserInterface__inherit__graph.png" border="0" usemap="#stopwatch_1_1UserInterface_inherit__map" alt="Inheritance graph"/></div>
-<map name="stopwatch_1_1UserInterface_inherit__map" id="stopwatch_1_1UserInterface_inherit__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for stopwatch::UserInterface:</div>
@@ -108,14 +111,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classstopwatch_1_1UserInterface__coll__graph.png" border="0" usemap="#stopwatch_1_1UserInterface_coll__map" alt="Collaboration graph"/></div>
-<map name="stopwatch_1_1UserInterface_coll__map" id="stopwatch_1_1UserInterface_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3567885d49505d1f4c0c6fff3bf3d386"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3567885d49505d1f4c0c6fff3bf3d386"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UserInterface</b> (<a class="el" href="classstopwatch_1_1StopWatch.html">StopWatch</a> &amp;sw)</td></tr>
+<tr class="memitem:a3567885d49505d1f4c0c6fff3bf3d386"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstopwatch_1_1UserInterface.html#a3567885d49505d1f4c0c6fff3bf3d386">UserInterface</a> (<a class="el" href="classstopwatch_1_1StopWatch.html">StopWatch</a> &amp;sw)</td></tr>
 <tr class="separator:a3567885d49505d1f4c0c6fff3bf3d386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57ef6a3f24848262bf60a79db831dd81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57ef6a3f24848262bf60a79db831dd81"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
@@ -124,26 +124,54 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
 <tr class="separator:ab7c1a96467f4d4dcde65d53cbd7d8492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdbcd72884e5ce167c339617c9c26e58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdbcd72884e5ce167c339617c9c26e58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>show_time</b> (int x, int y, high_resolution_clock::duration d)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstopwatch_1_1UserInterface.html#acdbcd72884e5ce167c339617c9c26e58">show_time</a> (int x, int y, high_resolution_clock::duration d)</td></tr>
+<tr class="memdesc:acdbcd72884e5ce167c339617c9c26e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the time at the given x,y position on the screen. <br /></td></tr>
 <tr class="separator:acdbcd72884e5ce167c339617c9c26e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c9acd9ad089bbd6d0ca371a14cd82fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c9acd9ad089bbd6d0ca371a14cd82fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstopwatch_1_1UserInterface.html#a7c9acd9ad089bbd6d0ca371a14cd82fa">update</a> ()</td></tr>
+<tr class="memdesc:a7c9acd9ad089bbd6d0ca371a14cd82fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the user interface by (a) reading keyboard input and (b) writing to the screen. <br /></td></tr>
 <tr class="separator:a7c9acd9ad089bbd6d0ca371a14cd82fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f19df2b9720d8f767b1c6add0375da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f19df2b9720d8f767b1c6add0375da"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="separator:a72f19df2b9720d8f767b1c6add0375da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="user__interface_8h_source.html#l00014">14</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>A user interface for the a <a class="el" href="classstopwatch_1_1StopWatch.html" title="A stop watch class, that inherits from StateMachine. ">StopWatch</a> object. </p>
+
+<p>Definition at line <a class="el" href="user__interface_8h_source.html#l00015">15</a> of file <a class="el" href="user__interface_8h_source.html">user_interface.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3567885d49505d1f4c0c6fff3bf3d386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UserInterface::UserInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstopwatch_1_1StopWatch.html">StopWatch</a> &amp;&#160;</td>
+          <td class="paramname"><em>sw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a new stopwatch user interface using curses </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sw</td><td>A reference to a <a class="el" href="classstopwatch_1_1StopWatch.html" title="A stop watch class, that inherits from StateMachine. ">StopWatch</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="user__interface_8cc_source.html#l00006">6</a> of file <a class="el" href="user__interface_8cc_source.html">user_interface.cc</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="user__interface_8h_source.html">user_interface.h</a></li>
 <li>src/<a class="el" href="user__interface_8cc_source.html">user_interface.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2019 17:14:09 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 14 2019 18:49:22 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
