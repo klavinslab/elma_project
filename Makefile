@@ -9,8 +9,8 @@ DGEN        := doxygen
 TARGET      := stopwatch
 
 #The Directories, Source, Includes, Objects, Binary and Resources
-SRCDIR      := .
-INCDIR      := .
+SRCDIR      := ./src
+INCDIR      := ./include
 BUILDDIR    := ./build
 TARGETDIR   := ./bin
 SRCEXT      := cc
@@ -29,9 +29,9 @@ INC         := -I$(INCDIR)
 INCDEP      := -I$(INCDIR)
 
 #Files
-HEADERS     := $(wildcard *.h)
-SOURCES     := $(wildcard *.cc)
-SOURCES		:= $(filter-out unit_test.cc,$(SOURCES))
+HEADERS     := $(wildcard ./include/*.h)
+SOURCES     := $(wildcard ./src/*.cc)
+SOURCES		:= $(filter-out ./src/unit_test.cc,$(SOURCES))
 OBJECTS     := $(patsubst %.cc, $(BUILDDIR)/%.o, $(notdir $(SOURCES)))
 NON_MAIN_OBJECTS     := $(filter-out ./build/main.o,$(OBJECTS))
 DGENCONFIG  := docs.config
@@ -63,8 +63,8 @@ spotless: clean
 	@$(RM) -rf build bin html latex
 
 #Unit Tester
-bin/test: $(NON_MAIN_OBJECTS) $(HEADERS) unit_test.cc test_main.cpp
-	$(CC) $(CFLAGS) $(INC) -c -o test_main.o test_main.cpp
+bin/test: $(NON_MAIN_OBJECTS) $(HEADERS) ./src/unit_test.cc ./src/test_main.cpp
+	$(CC) $(CFLAGS) $(INC) -c -o test_main.o ./src/test_main.cpp
 	$(CC) $(CFLAGS) -o bin/test test_main.o $(NON_MAIN_OBJECTS) $(LIB)
 
 #Link
@@ -72,7 +72,7 @@ $(TARGETDIR)/$(TARGET): $(OBJECTS) $(HEADERS)
 	$(CC) $(CFLAGS) -o $(TARGETDIR)/$(TARGET) $(OBJECTS) $(LIB)
 
 #Compile
-$(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT) $(HEADERS) $(ELMALIB)
+$(BUILDDIR)/%.o: $(SRCDIR)/%.cc $(HEADERS) 
 	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
 .PHONY: directories remake clean cleaner apidocs $(BUILDDIR) $(TARGETDIR)
