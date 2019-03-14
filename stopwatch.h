@@ -1,7 +1,7 @@
 #ifndef _ELMA_STOP_WATCH_H
 #define _ELMA_STOP_WATCH_H
 
-#include "elma.h"
+#include "elma/elma.h"
 #include "on.h"
 #include "off.h"
 #include "user_interface.h"
