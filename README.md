@@ -7,20 +7,20 @@ The source code for this project is available [on github](https://github.com/kla
 
 Installation
 ---
-```bash
-git clone https://github.com/klavinslab/elma_project.git
-cd elma_project
-docker run -v $PWD:/source -it klavins/elma:latest bash
-make
-make docs
-```
+
+    git clone https://github.com/klavinslab/elma_project.git
+    cd elma_project
+    docker run -v $PWD:/source -it klavins/elma:latest bash
+    make
+    make docs
+
 
 Execution
 ---
 To run the stopwatch, type
-```bash
-bin/stopwatch
-```
+
+    bin/stopwatch
+
 The stopwatch is controlled via the keyboard, via these keys:
 - **s**: Start or stop
 - **l**: Lap
