@@ -1,7 +1,5 @@
 doxygen_sqlite3.db
 bin/
-test/bin
-test/build
 examples/bin
 build/
 tmp/
