@@ -31,7 +31,6 @@ INCDEP      := -I$(INCDIR)
 #Files
 HEADERS     := $(wildcard ./include/*.h)
 SOURCES     := $(wildcard ./src/*.cc)
-SOURCES		:= $(filter-out ./src/unit_test.cc,$(SOURCES))
 OBJECTS     := $(patsubst %.cc, $(BUILDDIR)/%.o, $(notdir $(SOURCES)))
 NON_MAIN_OBJECTS     := $(filter-out ./build/main.o,$(OBJECTS))
 DGENCONFIG  := docs.config

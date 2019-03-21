@@ -12,6 +12,10 @@ namespace {
 
     TEST(StopWatch,Construction) { 
         StopWatch sw; 
+        Manager m;
+        m.schedule(sw,10_ms)
+          .init()
+          .start();
         ASSERT_EQ("off", sw.current().name());
     }
 
